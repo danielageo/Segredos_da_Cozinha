@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+body {
+    background-image: url('./imagens/tijolos_rosa.jpg.jfif');
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9789a;
+    padding: 15px;
+    color: white;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.caixa-pesquisa input {
+
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #c45063;
+    width: 300px;
+    border-radius:10px 10px 10px 10px;
+
+}
+
+.menu {
+    display: flex;
+    flex: 1;
+    border-bottom: 18px;
+}
+
+.vertical-menu {
+    width: 180px;
+    background-color: #c45063;
+    height: 300vh;
+    margin-right: 12px;
+}
+
+.vertical-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.vertical-menu ul li {
+    border-bottom: 1px solid #e9789a;
+}
+
+.vertical-menu ul li a {
+    text-decoration: none;
+     width: 105px;
+    display: block;
+    padding: 15px;
+    color: pink;
+    text-decoration: none;
+}
+
+.vertical-menu ul li a:hover {
+    background-color: #e60649;
+}
+
+main {
+    flex: 1;
+    padding: 0px;
+}
+
+main h1 {
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.comment-form {
+    background-color: #ffacc5;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    max-height: 200px;
+    height: 25%;
+    box-shadow: 4px 4px 4px 4px #ffa7c1;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    font-size: 30px;
+    color: #e9789a;
+    cursor: pointer;
+}
+
+.rating input[type="radio"]:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #e60649; /* Cor dourada para as estrelas selecionadas */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    width: 60px;
+    right: 100px;
+}
+
+textarea {
+    border-radius:10px 10px 10px 10px;
+    flex-direction: row-reverse;
+    right:260px ;
+    width: 260px;
+}
+
+button {
+  margin-left: 4px;  
+  margin-right: 2px;
+  border-bottom: 100px;
+  margin-bottom: 0px;
+  border:none;
+  margin-left: 20px;
+  float:none;
+  height:32px;
+  border-radius:10px 10px 10px 10px;
+  width:90px;
+  font-weight:bold;
+  background:#f58fa0;
+}
+
+iframe{
+    margin-top: 5px;
+    border-top-width: 12px; 
+    border-top-style: ridge;
+    border-top-color: #c45063;
+    margin-right: 5px;
+    border-right-width: 12px; 
+    border-style: ridge;
+    border-right-color: #c45063;
+}
+
+.forma_receita{
+    align-content: right;
+    align-items:center;
+    border-top: #c45063;
+    border-top-width: 12px;
+    border-top-style:ridge;
+    border-bottom: #c45063;
+    border-bottom-width: 12px;
+    border-bottom-style:ridge; 
+    border-right: #c45063;
+    border-right-width: 12px;
+    border-right-style:ridge;
+    border-left: #c45063;
+    border-left-width: 12px;
+    border-left-style:ridge;
+    display: flex;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    width: 50%;
+    max-width: 300px;
+    max-height: 300px;
+    height: 27%;
+    box-shadow: 0 0 0 0 #ffffff;
+}
+
+.forma_receita2{
+    
+    border-top: #c45063;
+    border-top-width: 12px;
+    border-top-style:ridge;
+    border-bottom: #c45063;
+    border-bottom-width: 12px;
+    border-bottom-style:ridge; 
+    border-right: #c45063;
+    border-right-width: 12px;
+    border-right-style:ridge;
+    border-left: #c45063;
+    border-left-width: 12px;
+    border-left-style:ridge;
+    display: flex;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    width: 50%;
+    max-width: 300px;
+    max-height: 300px;
+    height: 27%;
+    box-shadow: 0 0 0 0 #ffffff;
+}
+
+.forma_receita3{
+    
+    border-top: #c45063;
+    border-top-width: 12px;
+    border-top-style:ridge;
+    border-bottom: #c45063;
+    border-bottom-width: 12px;
+    border-bottom-style:ridge; 
+    border-right: #c45063;
+    border-right-width: 12px;
+    border-right-style:ridge;
+    border-left: #c45063;
+    border-left-width: 12px;
+    border-left-style:ridge;
+    display: flex;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    width: 50%;
+    max-width: 300px;
+    max-height: 480px;
+    height: 27%;
+    box-shadow: 0 0 0 0 #ffffff;
+}
+
+.forma_receita4{
+    
+    border-top: #c45063;
+    border-top-width: 12px;
+    border-top-style:ridge;
+    border-bottom: #c45063;
+    border-bottom-width: 12px;
+    border-bottom-style:ridge; 
+    border-right: #c45063;
+    border-right-width: 12px;
+    border-right-style:ridge;
+    border-left: #c45063;
+    border-left-width: 12px;
+    border-left-style:ridge;
+    display: flex;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    width: 50%;
+    max-width: 300px;
+    max-height: 330px;
+    height: 27%;
+    box-shadow: 0 0 0 0 #ffffff;
+}
